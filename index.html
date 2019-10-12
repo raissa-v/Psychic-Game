@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="psycicGame"></div>
+       <h1>The Psycic Game</h1>
+       <p>Guess what letter I'm thinking of!</p>
+       <p id= "winsText"></p>
+       <p id= "losesText"></p>
+       <p id= "guessesLeftText"></p>
+       <p id= "guessedLettersText"></p>
+
+        <script type ="text/javascript">
+        var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        var wins = 0;
+        var losses =0;
+        var guessesLeft = 9;
+        var guessedLetters = [];
+
+        var winsText = document.getElementById ("wins");
+        var losesText = document.getElementById ("losses");
+        var guessesLeftText = document.getElementById ("Guesses left");
+        var guessedLettersText = document.getElementById ("Guessed Letters"); 
+
+        const psycicGame = document.getElementById("psycicGame") 
+
+        document.onkewyup = function(event) {
+        
+        var userGuess =event.key;
+        var computerGuess = letters[Math.floor(Math.random() * letters.length)];
+        
+
+
+        }
+        
+        </script>
+    </body>
+</html>
